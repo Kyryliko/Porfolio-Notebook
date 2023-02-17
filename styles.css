@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: rgb(254, 244, 230);
+}
+
+#header {
+  height: 3rem;
+  width: 40rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 auto 3rem;
+  background-color: rgb(179, 231, 111);
+  color: rgb(70, 97, 150);
+}
+
+h1 {
+  margin: 0;
+}
+
+#input-notes {
+  margin-top: 2rem;
+}
+
+#history-notes {
+  margin-top: 2rem;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+textarea {
+  border-radius: 1rem;
+  box-shadow: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: rgb(202, 209, 219);
+}
+
+#btn-cancel,
+#btn-submit {
+  padding: 0.33rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  font-weight: bold;
+}
+
+#btn-cancel {
+  background-color: rgb(249, 198, 223);
+  /* color: ; */
+}
+
+#btn-submit {
+  background-color: rgb(180, 255, 231);
+  /* color: ; */
+}
