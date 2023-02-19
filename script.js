@@ -9,7 +9,6 @@ function saveNote(event) {
     const formData = new FormData(event.target)
     const userTextInput = formData.get('userinput').trim()
     enteredMassage = userTextInput
-    console.log(enteredMassage)
 
     if (!userTextInput) {
         alert('You didn\'t write anything!')
@@ -21,11 +20,23 @@ function saveNote(event) {
 
 function createNewListItem(event) {
     const newListItem = document.createElement('li')
+    const newDivElement = document.createElement('div')
     const newParagraph = document.createElement('p')
+    const newButtonElement = document.createElement('button')
 
-    listBlock.appendChild(newListItem)
-    newListItem.appendChild(newParagraph)
+
+
+    listBlock.append(newListItem)
+    newListItem.append(newDivElement)
+    newDivElement.appendChild(newParagraph)
+    newDivElement.appendChild(newButtonElement)
     newParagraph.textContent = enteredMassage
+
+    newButtonElement.textContent = 'X'
+
+
+    newDivElement.style.display = 'block'
+
 
     /* const textArea = document.getElementById('text-area')
     textArea.value = '' */

@@ -34,7 +34,6 @@ label {
 
 textarea {
   border-radius: 1rem;
-  box-shadow: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -60,3 +59,12 @@ textarea {
   /* color: ; */
 }
 
+#list-block li {
+  border: solid 0.09rem;
+  margin: 0.5rem auto;
+  width: 42rem;
+  height: auto;
+}
+
+#list-block p {
+}
