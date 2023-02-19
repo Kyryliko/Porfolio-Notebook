@@ -33,13 +33,19 @@ function createNewListItem(event) {
     newParagraph.textContent = enteredMassage
 
     newButtonElement.textContent = 'X'
-
-
-    newDivElement.style.display = 'block'
+    newButtonElement.type = 'button'
+    newButtonElement.onclick = 'myFunction()'
+    newListItem.classList.add('listElement')
 
 
     /* const textArea = document.getElementById('text-area')
-    textArea.value = '' */
+    textArea.value = ''
+    enteredMassage.value = '' */
+}
+
+function deleteLiItem() {
+    newListItem.remove()
 }
 
 formElement.addEventListener('submit', saveNote)
+/* newButtonElement.addEventListener('click', deleteLiItem) */
