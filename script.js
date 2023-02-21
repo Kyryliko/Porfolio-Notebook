@@ -1,5 +1,6 @@
 const formElement = document.querySelector('form')
 const listBlock = document.getElementById('list-block')
+
 var enteredMassage
 
 
@@ -15,37 +16,18 @@ function saveNote(event) {
         return
     }
 
-    createNewListItem()
+    createNewLiItem()
 }
 
-function createNewListItem(event) {
-    const newListItem = document.createElement('li')
-    const newDivElement = document.createElement('div')
-    const newParagraph = document.createElement('p')
-    const newButtonElement = document.createElement('button')
+function createNewLiItem() {
+    const liTemplateElement = document.getElementById('list-block').firstElementChild
+    const clone = liTemplateElement.cloneNode(true)
+    document.getElementById('list-block').appendChild(clone)
+    document.getElementById('list-block').lastElementChild.style.display = 'block'
 
-
-
-    listBlock.append(newListItem)
-    newListItem.append(newDivElement)
-    newDivElement.appendChild(newParagraph)
-    newDivElement.appendChild(newButtonElement)
-    newParagraph.textContent = enteredMassage
-
-    newButtonElement.textContent = 'X'
-    newButtonElement.type = 'button'
-    newButtonElement.onclick = 'myFunction()'
-    newListItem.classList.add('listElement')
-
-
-    /* const textArea = document.getElementById('text-area')
-    textArea.value = ''
-    enteredMassage.value = '' */
+    const paragraphElement = document.getElementById('list-block').firstElementChild.firstElementChild.firstElementChild
+    paragraphElement.textContent = enteredMassage
 }
 
-function deleteLiItem() {
-    newListItem.remove()
-}
 
 formElement.addEventListener('submit', saveNote)
-/* newButtonElement.addEventListener('click', deleteLiItem) */

@@ -59,12 +59,22 @@ textarea {
   /* color: ; */
 }
 
-#list-block li {
+/* #list-block {
+} */
+
+#list-block div {
   border: solid 0.09rem;
+  border-radius: 1rem;
   margin: 0.5rem auto;
   width: 42rem;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: /* flex-start; */ space-between;
+  align-items: stretch;
 }
 
-#list-block p {
+#list-block li {
+  display: none;
 }
