@@ -59,10 +59,12 @@ textarea {
   /* color: ; */
 }
 
-/* #list-block {
-} */
+#list-block {
+  padding: 0;
+}
 
 #list-block div {
+  padding: 0.5rem;
   border: solid 0.09rem;
   border-radius: 1rem;
   margin: 0.5rem auto;
@@ -71,10 +73,10 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: /* flex-start; */ space-between;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 #list-block li {
-  display: none;
+  list-style: none;
 }
