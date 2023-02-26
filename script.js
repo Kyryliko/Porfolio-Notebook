@@ -2,7 +2,7 @@ const formElement = document.querySelector('form');
 const listBlock = document.getElementById('list-block');
 const deleteBtn = document.getElementById('123');
 
-var enteredMassage;
+let enteredMassage;
 
 
 function saveNote(event) {
@@ -47,6 +47,6 @@ function createNewListItem(event) {
     const textArea = document.getElementById('text-area');
     textArea.value = '';
     enteredMassage.value = '';
-}
+};
 
 formElement.addEventListener('submit', saveNote);
